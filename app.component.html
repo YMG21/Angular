@@ -1,0 +1,14 @@
+<h2> Student Enrollment Form </h2>
+
+<form #myform="ngForm" (ngSubmit)="getValue(myform.value)" >
+
+  Name:<input type="text" ngModel name="Name" placeholder="Enter Full Name"><br><br>
+  Father Name:<input type="text" ngModel name="Fname" placeholder="Enter Father's Name"><br><br>
+  Date of Birth:<input type="date" ngModel name="Date" placeholder="dd-mm-yyyy"><br><br>
+  Address: <input type="text" ngModel name="Address" placeholder="Enter Permanent Address"><br><br>
+  Course:<input type="text" ngModel name="Course" placeholder="Enter your Course"><br><br>
+
+  <button>SUBMIT</button>
+</form>
+
+<router-outlet></router-outlet>
